@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Prediction Game</title>
+    <link rel="stylesheet" href="game.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+
+
+</head>
+<body>
+    <h1 class="title">Word Prediction Game </h1>
+
+    <div class="word-container">
+        <img src="letter/c.svg" alt="C" class="letter">
+        <img src="letter/l.svg" alt="L" class="letter">
+        <img src="letter/o.svg" alt="O" class="letter">
+        <img src="letter/u.svg" alt="U" class="letter">
+        <img src="letter/d.svg" alt="D" class="letter">
+    </div>
+    
+
+<div class="prediction-container">
+    <input type="text" id="prediction-input" placeholder="Your Prediction">
+    <button id="submit-btn">Submit</button>
+    <button id="reset-btn"> Reset the Game</button>
+ 
+</div>
+
+
+<div class="game-status">
+    <div class="score">
+        Score: <span id="score">0</span>
+    </div>
+    <div class="lives">
+        Lives: 
+        <i class="fas fa-heart heart"></i>
+        <i class="fas fa-heart heart"></i>
+        <i class="fas fa-heart heart"></i>
+    </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
