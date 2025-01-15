@@ -56,7 +56,11 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer; 
-  
+}
+
+#submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 
@@ -104,6 +108,20 @@ body {
 .heart {
     
     color: red; 
+}
+
+/* Titreşim animasyonu - can kaybedildiğinde çalışır */
+@keyframes shake {
+    0% { transform: translateX(0px); }  /* Başlangıç pozisyonu */
+    25% { transform: translateX(-5px); }  /* Sola git */
+    50% { transform: translateX(5px); }   /* Sağa git */
+    75% { transform: translateX(-5px); }  /* Tekrar sola */
+    100% { transform: translateX(0px); }  /* Başlangıç pozisyonuna dön */
+}
+
+/* Titreşim animasyonunu uygulayan sınıf */
+.shake-animation {
+    animation: shake 0.5s;  /* Animasyon 0.5 saniye sürer */
 }
 
 
